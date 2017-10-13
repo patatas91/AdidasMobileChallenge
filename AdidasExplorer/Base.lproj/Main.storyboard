@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7dh-A0-qGE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="WeU-Be-bo7">
+            <objects>
+                <viewController id="7dh-A0-qGE" customClass="ViewController" customModule="AdidasExplorer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="loo-cG-myf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" sceneName="CameraSetup.scn" wantsMultisampling="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <outlet property="delegate" destination="7dh-A0-qGE" id="6YV-aS-dot"/>
+                                </connections>
+                            </arscnView>
+                            <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="37h-bD-Iyn">
+                                <rect key="frame" x="15" y="577" width="152" height="57"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pkc-hu-yuO">
+                                    <rect key="frame" x="0.0" y="0.0" width="152" height="57"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Initializing AR session." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCE-IA-wLv">
+                                            <rect key="frame" x="8" y="8" width="130" height="41"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="7j0-wl-8x9"/>
+                                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="awR-PG-icx"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="hCE-IA-wLv" firstAttribute="leading" secondItem="pkc-hu-yuO" secondAttribute="leading" constant="8" id="6LO-f0-XCW"/>
+                                        <constraint firstAttribute="bottom" secondItem="hCE-IA-wLv" secondAttribute="bottom" constant="8" id="9pn-kU-sot"/>
+                                        <constraint firstAttribute="trailing" secondItem="hCE-IA-wLv" secondAttribute="trailing" constant="14" id="IgQ-c0-8xG"/>
+                                        <constraint firstItem="hCE-IA-wLv" firstAttribute="top" secondItem="pkc-hu-yuO" secondAttribute="top" constant="8" id="Y6E-Fz-pF4"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </visualEffectView>
+                            <button clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5w-VJ-AOy" userLabel="ball">
+                                <rect key="frame" x="209" y="579" width="62" height="58"/>
+                                <accessibility key="accessibilityConfiguration" label="ball"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="7i7-k6-CXc"/>
+                                    <constraint firstAttribute="height" constant="58" id="Xin-de-Q4A"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pulsarButtonBall:" destination="7dh-A0-qGE" eventType="touchUpInside" id="Vtf-LQ-xXS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eoa-PZ-r57" userLabel="shoe">
+                                <rect key="frame" x="294" y="579" width="61" height="58"/>
+                                <accessibility key="accessibilityConfiguration" label="shoe"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="NsC-r1-E3d"/>
+                                    <constraint firstAttribute="width" constant="61" id="mN9-u2-HJO" userLabel="width = 62"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pulsarButtonShoe:" destination="7dh-A0-qGE" eventType="touchUpInside" id="cUD-b3-1jp"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball" translatesAutoresizingMaskIntoConstraints="NO" id="A2s-hl-tzo">
+                                <rect key="frame" x="206" y="574" width="68" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="HjP-Vz-6xu"/>
+                                    <constraint firstAttribute="width" constant="68" id="Laf-Du-le7"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoe" translatesAutoresizingMaskIntoConstraints="NO" id="RcW-XB-ds2">
+                                <rect key="frame" x="286" y="573" width="73" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="nxb-JC-JzG"/>
+                                    <constraint firstAttribute="height" constant="74" id="udm-V5-3HE"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="71x-2l-AWw" firstAttribute="trailing" secondItem="Eoa-PZ-r57" secondAttribute="trailing" constant="20" id="0Tc-5S-juT"/>
+                            <constraint firstAttribute="bottom" secondItem="BrB-h1-WRS" secondAttribute="bottom" id="8rY-15-6Ru"/>
+                            <constraint firstItem="71x-2l-AWw" firstAttribute="trailing" secondItem="RcW-XB-ds2" secondAttribute="trailing" constant="16" id="FO2-qH-2OA"/>
+                            <constraint firstItem="71x-2l-AWw" firstAttribute="bottom" secondItem="s5w-VJ-AOy" secondAttribute="bottom" constant="30" id="Gal-VU-1Qz" userLabel="Safe Area.bottom = ball.bottom + 33"/>
+                            <constraint firstItem="71x-2l-AWw" firstAttribute="bottom" secondItem="RcW-XB-ds2" secondAttribute="bottom" constant="20" id="Lkw-1k-qxr"/>
+                            <constraint firstItem="71x-2l-AWw" firstAttribute="bottom" secondItem="A2s-hl-tzo" secondAttribute="bottom" constant="31" id="OHL-X2-RMW"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="71x-2l-AWw" secondAttribute="leading" id="QIa-Ri-qJo"/>
+                            <constraint firstItem="RcW-XB-ds2" firstAttribute="leading" secondItem="A2s-hl-tzo" secondAttribute="trailing" constant="12" id="TRG-W2-eK7"/>
+                            <constraint firstItem="71x-2l-AWw" firstAttribute="bottom" secondItem="Eoa-PZ-r57" secondAttribute="bottom" constant="30" id="UFL-qY-kAj" userLabel="Safe Area.bottom = shoe.bottom + 33"/>
+                            <constraint firstItem="s5w-VJ-AOy" firstAttribute="leading" secondItem="37h-bD-Iyn" secondAttribute="trailing" constant="42" id="UzI-G0-Txz"/>
+                            <constraint firstItem="71x-2l-AWw" firstAttribute="trailing" secondItem="BrB-h1-WRS" secondAttribute="trailing" id="a3B-9u-pb1"/>
+                            <constraint firstItem="Eoa-PZ-r57" firstAttribute="leading" secondItem="s5w-VJ-AOy" secondAttribute="trailing" constant="23" id="fmP-74-UWV"/>
+                            <constraint firstItem="71x-2l-AWw" firstAttribute="bottom" secondItem="37h-bD-Iyn" secondAttribute="bottom" constant="33" id="j5m-RQ-OjM"/>
+                            <constraint firstItem="37h-bD-Iyn" firstAttribute="leading" secondItem="71x-2l-AWw" secondAttribute="leading" constant="15" id="lLK-x7-VyJ"/>
+                            <constraint firstAttribute="top" secondItem="BrB-h1-WRS" secondAttribute="top" id="ulI-xa-35w"/>
+                            <constraint firstItem="Eoa-PZ-r57" firstAttribute="leading" secondItem="s5w-VJ-AOy" secondAttribute="trailing" constant="23" id="xNC-DT-jwT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="71x-2l-AWw"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="BrB-h1-WRS" id="sgr-g8-kdG"/>
+                        <outlet property="sessionInfoLabel" destination="hCE-IA-wLv" id="fqx-0o-IdX"/>
+                        <outlet property="sessionInfoView" destination="37h-bD-Iyn" id="e6g-gN-reW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hvH-ud-t1P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="dh1-aA-Oau" customClass="SCNScene"/>
+            </objects>
+            <point key="canvasLocation" x="1026.4000000000001" y="-224.4377811094453"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ball" width="85" height="85"/>
+        <image name="shoe" width="170" height="170"/>
+    </resources>
+</document>
