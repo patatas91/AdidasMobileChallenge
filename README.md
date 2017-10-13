@@ -3,6 +3,10 @@ Adidas Explorer - Arkit App
 
 ![img_0061](https://user-images.githubusercontent.com/16426967/31556807-c53cef9c-b046-11e7-9c3d-b51d7ca76141.PNG)
 
+Video de la aplicacion en funcionamiento:
+
+https://youtu.be/mvf-hvHFdfQ
+
 Aplicacion desarrollada en Xcode 9 con la libreria de iOS 11 Arkit. Esta aplicacion nos permitira la visualizacion de una serie de modelos de articulos de Adidas mediante la realidad aumentada. Cuando el usuario inicia la aplicacion el sistema esperara hasta tener la correcta iluminacion para su funcionamiento:
 
 ![img_0060](https://user-images.githubusercontent.com/16426967/31556917-2c039d84-b047-11e7-9d6f-c1aca18851c5.PNG)
@@ -23,6 +27,4 @@ Una vez seleccionemos el modelo y pulsemos en pantalla aparecera el modelo junto
 
 ![img_0071](https://user-images.githubusercontent.com/16426967/31557151-f8fb7da2-b047-11e7-860c-1034e729af72.PNG)
 
-Video de la aplicacion en funcionamiento:
 
-https://youtu.be/mvf-hvHFdfQ
