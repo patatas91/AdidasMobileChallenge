@@ -11,7 +11,8 @@ import UIKit
 
 class SplashController: UIViewController {
     
-    @IBOutlet weak var Imagen: UIImageView!
+    
+    @IBOutlet weak var Splash: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +21,7 @@ class SplashController: UIViewController {
     }
     
     @objc func showMain(){
-        performSegue(withIdentifier: "main", sender: self)
+        performSegue(withIdentifier: "splashController", sender: self)
     }
     
     override func didReceiveMemoryWarning() {
