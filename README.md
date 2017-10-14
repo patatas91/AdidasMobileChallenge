@@ -1,5 +1,5 @@
 # AdidasMobileChallenge
-Adidas Explorer - Arkit App   |   by Cristian Simón Moreno
+Adidas Explorer - Arkit App 
 
 ![img_0061](https://user-images.githubusercontent.com/16426967/31556807-c53cef9c-b046-11e7-9c3d-b51d7ca76141.PNG)
 
